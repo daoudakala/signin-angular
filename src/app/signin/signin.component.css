@@ -1,11 +1,3 @@
-body{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-image: url(assets/images/Africanstetos.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
   .bg-white{
     background-color: #ffff;
   }
