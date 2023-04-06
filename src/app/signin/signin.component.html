@@ -1,44 +1,37 @@
 <div class="hello">
-    <div class="iconplus">
-      <img src={iconPlus} alt="plus icon" width="50px"/>
-    </div>
-    <h1 class="titre">Bienvenue</h1>
-    <div class="form" id="form">
-      <form>
-      <br/>
-        <div class="form-elem">
+  <div class="iconplus">
+    <img src="assets/images/plusicon.png" alt="plus icon" width="50px" />
+  </div>
+  <h1 class="titre">Bienvenue</h1>
+  <div>
+    <form [ngClass]="{'form': true, 'bg-blue-withe': change_color}" [formGroup]="myForm" (ngSubmit)="submitForm()">
+      <br />
+      <div class="form-elem">
         <div class="email">
-          <input
-            type="email"
-            placeholder="Adresse e-mail"
-            class="input-form"
-          />
+          <input formControlName="email" type="email" placeholder="Adresse e-mail" [ngClass]="{'input-form': true, 'border-blue': change_color, 'color-blue': change_color}" />
         </div>
-        <br/>
+        <br />
         <div class="password">
-          <input
-            type="text"
-            name="password"
-            placeholder="Mot de passe"
-            class="input-form pass"
-          />
-          <span></span>
+          <input [type]="password" formControlName="password" placeholder="Mot de passe" [ngClass]="{'input-form': true, 'pass': change_color, 'border-blue': change_color, 'color-blue': change_color}" />
+          <span (click)="onClick()">
+            <i class="fa fa-eye" aria-hidden="true" *ngIf="!show"></i>
+            <i class="fa fa-eye-slash" aria-hidden="true" *ngIf="show"></i>
+          </span>
         </div>
         <div class="forget">
           <a href="?">Mot de passe oublié</a>
         </div>
-        <br/><br/><br/>
+        <br /><br /><br />
         <div class="submit">
-          <input
-            type="submit"
-            value="Se connecter"
-            class="input-btn"
-          />
+          <button type="submit" [ngClass]="{'input-btn': true, 'bg-blue': change_color}">
+            Se connecter
+          </button>
+          <!-- <input type="submit" value="Se connecter" class="input-btn" /> -->
         </div>
-        </div>
-      </form>
-      <div class="logo-footer">
-      <img src={logo} alt="logo footer"  width='200px'/>
+      </div>
+    </form>
+    <div class="logo-footer">
+      <img src="assets/logo/logo-alaxione.png" alt="logo footer" width='200px' />
     </div>
-    </div>
+  </div>
 </div>

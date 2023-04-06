@@ -9,23 +9,10 @@ export class AppComponent {
 
   title = 'alaxione';
 
-  password:any;
-
-  show = false;
 
   ngOnInit() {
-    this.password = 'password';
   }
 
-  onClick() {
-    if (this.password === 'password') {
-      this.password = 'text';
-      this.show = true;
-    } else {
-      this.password = 'password';
-      this.show = false;
-    }
-  }
 
 
 }

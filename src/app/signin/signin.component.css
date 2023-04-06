@@ -1,3 +1,11 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-image: url(assets/images/Africanstetos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .bg-white{
     background-color: #ffff;
   }
@@ -67,43 +75,43 @@
   .input-btn{
   background-color: #8ac3c9;
   border: 1px solid #212852;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-size: 20px;
   position: relative;
   padding: 10px;
   color: white;
   width: 40%;
-  }
-  
-  .forget{
-    margin-top: 10px;
-  }
-  a:hover{
-    color:#911616;
-  }
-  a:visited{
-    color:#afaaaa;
-  }
-  .logo-footer{
-    text-align: center;
-  }
-   img{
-    position: relative;
-    top: 30vh;
-  }
-  
-  span{
-    position: relative; 
-    top: 100;
-    color : #ffff;
-    left: -20px;
-    width: 80px;
-  }
-  
-  .iconplus img{
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding-top: 20px;
-    padding-right: 20px;
-  }
+}
+
+.forget {
+  margin-top: 10px;
+}
+a:hover {
+  color: #911616;
+}
+a:visited {
+  color: #afaaaa;
+}
+.logo-footer {
+  text-align: center;
+}
+img {
+  position: relative;
+  top: 30vh;
+}
+
+span {
+  position: relative;
+  top: 100;
+  color: #ffff;
+  left: -20px;
+  width: 80px;
+}
+
+.iconplus img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 20px;
+  padding-right: 20px;
+}
